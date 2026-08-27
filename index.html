@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MK Oto Lastik - Kaliteli lastik, profesyonel montaj ve balans hizmetleri. Güvenli sürüş için doğru adres.">
+<title>MK Oto Lastik | Güvenli Sürüşün Adresi</title>
+<style>
+:root{--dark:#101318;--dark2:#171b21;--red:#e31b23;--light:#f5f6f8;--text:#20242a;--muted:#68707b;--white:#fff;--line:#e3e6ea}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6;-webkit-text-size-adjust:100%}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(16,19,24,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.45rem;font-weight:900;color:var(--white);letter-spacing:-.5px}.logo span{color:var(--red)}
+nav{display:flex;gap:28px;color:#d9dde3;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--white)}
+.nav-btn,.hero-btn{background:var(--red);color:var(--white);padding:12px 19px;border-radius:8px;font-weight:800;display:inline-block;transition:.2s;cursor:pointer}
+.nav-btn:hover,.hero-btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.menu{display:none;background:none;border:0;color:var(--white);font-size:28px;cursor:pointer;padding:8px}
+
+.hero{position:relative;min-height:720px;padding-top:76px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg, #080a0d 0%, #171b21 50%, #101318 100%)}
+.hero-pattern{position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 80% 50%, rgba(227,27,35,0.18) 0%, transparent 60%);z-index:1}
+.hero .container{position:relative;z-index:2}
+
+.hero-content{max-width:650px;color:var(--white);padding:90px 0}
+.kicker{color:#ff4a51;text-transform:uppercase;letter-spacing:2px;font-weight:900;font-size:.82rem;margin-bottom:14px}
+h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.02;letter-spacing:-2px;margin-bottom:22px}
+.hero p{font-size:1.15rem;color:#dfe3e8;max-width:590px;margin-bottom:32px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.outline{border:1px solid rgba(255,255,255,.35);color:var(--white);padding:11px 19px;border-radius:8px;font-weight:800}
+section{padding:92px 0}.section-head{max-width:650px;margin-bottom:42px}.eyebrow{color:var(--red);font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:8px 0 14px;letter-spacing:-1px}.section-head p{color:var(--muted)}
+.services{background:var(--light)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px;transition:.25s;box-shadow:0 8px 25px rgba(16,19,24,.04)}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(16,19,24,.1)}
+.icon{width:50px;height:50px;border-radius:12px;background:#fff0f1;color:var(--red);display:grid;place-items:center;font-size:24px;margin-bottom:20px}
+.card h3{margin-bottom:9px;font-size:1.2rem}.card p{color:var(--muted);font-size:.95rem}
+
+.about{max-width:800px;margin:0 auto;text-align:center;}
+.about .section-head{max-width:100%;margin-bottom:28px;}
+.about p{color:var(--muted);font-size:1.05rem;max-width:700px;margin:0 auto 35px;}
+
+.checks{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:25px}
+.check{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;background:var(--light);padding:20px;border-radius:12px;border:1px solid var(--line);flex:1;min-width:220px;}
+.check b{color:var(--red);font-size:1.2rem;background:#fff0f1;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;margin-bottom:4px;}
+
+.booking{background:var(--dark);color:var(--white)}.booking .section-head p{color:#aeb5bf}
+.form-wrap{background:var(--white);color:var(--text);padding:32px;border-radius:16px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:.88rem;font-weight:800}input,select,textarea{font:inherit;border:1px solid #d8dce1;border-radius:8px;padding:12px 13px;outline:none;background:var(--white)}input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px #e31b2318}textarea{min-height:120px;resize:vertical}.submit{border:0;background:var(--red);color:var(--white);padding:13px;border-radius:8px;font-weight:900;font-size:1rem;cursor:pointer}
+
+.faq{max-width:850px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{width:100%;padding:18px 8px;min-height:56px;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;cursor:pointer;font-weight:800;color:var(--text);-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::marker{content:""}
+.faq summary::after{content:"+";color:var(--red);font-size:22px;line-height:1;flex-shrink:0;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 8px 20px;margin:0;color:var(--muted)}
+
+.contact{background:var(--light)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px}.contact-box h3{margin-bottom:15px}.contact-row{display:flex;gap:14px;margin:18px 0}.contact-row .icon{margin:0;flex:none;width:44px;height:44px}.contact-row small{display:block;color:var(--muted);font-weight:700}.contact-row strong{font-size:1rem}
+
+.map{width:100%;min-height:280px;height:350px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#dce3ea;position:relative}
+.map-card{display:block;width:100%;height:100%;position:relative;color:var(--white)}
+.map-card img{width:100%;height:100%;object-fit:cover;display:block}
+.map-fallback{position:absolute;inset:0;background:
+  linear-gradient(180deg, rgba(16,19,24,.05), rgba(16,19,24,.45)),
+  repeating-linear-gradient(0deg, transparent, transparent 27px, #c9d2dc 28px),
+  repeating-linear-gradient(90deg, transparent, transparent 27px, #c9d2dc 28px),
+  #e8eef3}
+.map-pin{position:absolute;left:50%;top:42%;transform:translate(-50%,-100%);width:28px;height:28px;background:var(--red);border-radius:50% 50% 50% 0;transform-origin:center;rotate: -45deg;box-shadow:0 8px 18px rgba(16,19,24,.25)}
+.map-cta{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);background:var(--red);color:#fff;padding:11px 16px;border-radius:8px;font-weight:800;white-space:nowrap;box-shadow:0 8px 20px rgba(16,19,24,.25);z-index:2}
+
+footer{background:#0c0e12;color:#aeb5bf;padding:28px 0}.footer{display:flex;justify-content:space-between;gap:20px}.footer strong{color:var(--white)}
+.whatsapp{position:fixed;left:20px;bottom:20px;z-index:999;background:#25d366;color:var(--white);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:25px;font-weight:900;box-shadow:0 8px 25px #0003}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,30px);background:#171b21;color:var(--white);padding:13px 20px;border-radius:9px;opacity:0;pointer-events:none;transition:.3s;z-index:1000}.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:800px){
+  nav{display:none;position:absolute;top:76px;left:0;width:100%;background:#101318;flex-direction:column;padding:24px 20px;gap:16px;box-shadow:0 10px 20px rgba(0,0,0,0.3);border-bottom:1px solid rgba(255,255,255,0.08)}
+  nav.active{display:flex}
+  .nav-btn{display:none}
+  .menu{display:block}
+  .grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr; display: flex; flex-direction: column-reverse;}
+  .checks{flex-direction:column;align-items:stretch;}
+  .form{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .hero{min-height:550px}
+  .hero-content{padding:70px 0}
+  section{padding:70px 0}
+  .footer{flex-direction:column}
+  .map{height:300px;min-height:280px}
+  .faq summary{min-height:60px;padding:16px 6px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#anasayfa">MK <span>OTO LASTİK</span></a>
+<nav id="mobileNav">
+  <a href="#anasayfa">Ana Sayfa</a>
+  <a href="#hizmetler">Hizmetler</a>
+  <a href="#randevu">Randevu</a>
+  <a href="#sss">SSS</a>
+  <a href="#iletisim">İletişim</a>
+</nav>
+<a class="nav-btn" href="#randevu">Randevu Al</a>
+<button class="menu" id="menuBtn" aria-label="Menüyü aç">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="anasayfa">
+<div class="hero-pattern"></div>
+<div class="container"><div class="hero-content">
+<div class="kicker">MK Oto Lastik</div>
+<h1>Güvenli sürüş, doğru lastikle başlar.</h1>
+<p>Kaliteli lastik seçenekleri, profesyonel montaj ve hassas balans hizmetleriyle aracınız için güvenilir çözümler sunuyoruz.</p>
+<div class="hero-actions"><a class="hero-btn" href="#randevu">Randevu Talebi Oluştur</a><a class="outline" href="#hizmetler">Hizmetlerimizi İncele</a></div>
+</div></div>
+</section>
+
+<section class="services" id="hizmetler">
+<div class="container"><div class="section-head"><span class="eyebrow">Hizmetlerimiz</span><h2>Aracınız için ihtiyacınız olan lastik hizmetleri.</h2><p>Kalite, işçilik ve güven odaklı profesyonel hizmet.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">◉</div><h3>Oto Lastik Satışı</h3><p>Aracınıza ve kullanım koşullarınıza uygun kaliteli lastik seçenekleriyle güvenli sürüşe destek oluyoruz.</p></div>
+<div class="card"><div class="icon">↕</div><h3>Lastik Montajı</h3><p>Lastik sökme ve takma işlemlerini profesyonel ekipman ve özenli işçilikle gerçekleştiriyoruz.</p></div>
+<div class="card"><div class="icon">⚖️</div><h3>Balans Ayarı</h3><p>Yüksek hızlarda titreşimi önlemek ve sürüş konforunu artırmak için hassas balans ayarı yapıyoruz.</p></div>
+</div></div>
+</section>
+
+<section>
+<div class="container about">
+<div class="section-head" style="margin:0 auto 20px auto;">
+<span class="eyebrow">Neden MK Oto Lastik?</span>
+<h2>Lastiğinizde kalite, hizmetinizde güven.</h2>
+</div>
+<p>Doğru lastik seçimi ve düzenli bakım, hem sürüş güvenliği hem de yol tutuşu açısından önemlidir. MK Oto Lastik olarak ihtiyaçlarınıza uygun çözümleri hızlı ve özenli bir şekilde sunmayı hedefliyoruz.</p>
+<div class="checks">
+<div class="check"><b>✓</b><span><strong>Kaliteli ürünler</strong><br>Güvenilir lastik seçenekleri.</span></div>
+<div class="check"><b>✓</b><span><strong>Profesyonel işçilik</strong><br>Özenli montaj ve balans hizmeti.</span></div>
+<div class="check"><b>✓</b><span><strong>Müşteri odaklı hizmet</strong><br>İhtiyacınıza uygun çözüm yaklaşımı.</span></div>
+</div>
+</div>
+</section>
+
+<section class="booking" id="randevu">
+<div class="container"><div class="section-head"><span class="eyebrow">Randevu</span><h2>Hizmet talebinizi iletin.</h2><p>Formu doldurun; bilgileriniz WhatsApp üzerinden doğrudan MK Oto Lastik'e gönderilsin.</p></div>
+<div class="form-wrap"><form class="form" id="appointment">
+<div class="field"><label for="name">Ad Soyad</label><input id="name" required placeholder="Adınız Soyadınız"></div>
+<div class="field"><label for="phone">Telefon</label><input id="phone" type="tel" required placeholder="05XX XXX XX XX"></div>
+<div class="field"><label for="car">Araç Marka / Model</label><input id="car" placeholder="Örn. Renault Clio"></div>
+<div class="field"><label for="service">Hizmet</label><select id="service" required><option value="">Hizmet seçin</option><option>Oto Lastik Satışı</option><option>Lastik Montajı</option><option>Balans Ayarı</option><option>Diğer</option></select></div>
+<div class="field"><label for="date">Tercih Edilen Tarih</label><input id="date" type="date"></div>
+<div class="field"><label for="time">Tercih Edilen Saat</label><input id="time" type="time"></div>
+<div class="field full"><label for="note">Ek Not</label><textarea id="note" placeholder="Belirtmek istediğiniz başka bir bilgi varsa yazabilirsiniz."></textarea></div>
+<div class="field full"><button class="submit" type="submit">Randevu Talebi Gönder</button></div>
+</form></div></div>
+</section>
+
+<section id="sss">
+<div class="container"><div class="section-head"><span class="eyebrow">SSS</span><h2>Sıkça sorulan sorular.</h2><p>Lastik bakımıyla ilgili merak edilenler.</p></div>
+<div class="faq">
+<details>
+  <summary>Lastikler ne zaman değiştirilmelidir?</summary>
+  <p>Lastiğin diş derinliği, yaşı, yüzeyindeki çatlaklar ve genel durumu kontrol edilmelidir. Güvenli kullanım için üretici tavsiyeleri ve profesyonel kontrol dikkate alınmalıdır.</p>
+</details>
+<details>
+  <summary>Lastik basıncı ne sıklıkla kontrol edilmelidir?</summary>
+  <p>Lastik basıncının düzenli olarak ve özellikle uzun yolculuklardan önce kontrol edilmesi önerilir. Doğru basınç değeri araç üreticisinin tavsiyesine göre belirlenmelidir.</p>
+</details>
+<details>
+  <summary>Lastiklerin ömrü ne kadardır?</summary>
+  <p>Lastik ömrü; kullanım, iklim, depolama, bakım ve sürüş koşullarına göre değişir. Lastiklerin düzenli olarak uzman tarafından kontrol edilmesi önemlidir.</p>
+</details>
+<details>
+  <summary>Mevsim değişiminde lastik değiştirmek gerekir mi?</summary>
+  <p>Mevsim ve bölgesel yol koşullarına uygun lastik kullanımı güvenli sürüş açısından önemlidir. Uygun lastik seçimi için kullanım koşullarınızı değerlendirin.</p>
+</details>
+</div></div>
+</section>
+
+<section class="contact" id="iletisim">
+<div class="container"><div class="section-head"><span class="eyebrow">İletişim</span><h2>MK Oto Lastik'e ulaşın.</h2><p>Sorularınız veya randevularınız için iletişim kanallarımız üzerinden bize ulaşabilirsiniz.</p></div>
+<div class="contact-grid">
+<div class="contact-box">
+<h3>İletişim Bilgileri</h3>
+<div class="contact-row"><div class="icon">☎</div><div><small>Telefon</small><strong>+90 535 569 71 76</strong></div></div>
+<div class="contact-row"><div class="icon">⌖</div><div><small>Adres</small><strong>Hacı Osman, Hızır Reis Cd. no:274, 41780 Belen/Kocaeli</strong></div></div>
+<div class="contact-row"><div class="icon">◷</div><div><small>Çalışma Saatleri</small><strong>Pazartesi - Cumartesi: 08:30 - 19:00</strong></div></div>
+<a class="hero-btn" href="#randevu" style="display:inline-block; margin-top:10px;">Bize Ulaşın</a>
+</div>
+<div class="map">
+  <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=Hacı%20Osman%2C%20Hızır%20Reis%20Cd.%20no%3A274%2C%2041780%20Belen%2FKocaeli" target="_blank" rel="noopener">
+    <div class="map-fallback"></div>
+    <span class="map-pin" aria-hidden="true"></span>
+    <img src="https://staticmap.openstreetmap.de/staticmap.php?center=40.773753,29.747576&zoom=17&size=640x400&maptype=mapnik&markers=40.773753,29.747576,red-pushpin" alt="MK Oto Lastik, Hızır Reis Cd. no:274" width="640" height="400">
+    <span class="map-cta">Google Maps'te aç</span>
+  </a>
+</div>
+</div></div>
+</section>
+</main>
+
+<a class="whatsapp" href="https://wa.me/905355697176" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+<footer><div class="container footer"><div><strong>MK Oto Lastik</strong><br>Güvenli sürüş için doğru adres.</div><div>© 2026 MK Oto Lastik. Tüm hakları saklıdır.</div></div></footer>
+<div class="toast" id="toast">Randevu talebiniz hazırlandı. Sizinle iletişime geçeceğiz.</div>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileNav = document.getElementById('mobileNav');
+
+menuBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  mobileNav.classList.toggle('active');
+});
+
+mobileNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!mobileNav.contains(e.target) && !menuBtn.contains(e.target)) {
+    mobileNav.classList.remove('active');
+  }
+});
+
+document.getElementById('appointment').addEventListener('submit', e => {
+  e.preventDefault();
+  const get = id => document.getElementById(id).value.trim();
+  const message =
+    "🚗 *MK Oto Lastik Randevu Talebi*\n\n" +
+    "👤 Ad Soyad: " + get('name') + "\n" +
+    "📞 Telefon: " + get('phone') + "\n" +
+    "🚘 Araç: " + (get('car') || 'Belirtilmedi') + "\n" +
+    "🔧 Hizmet: " + get('service') + "\n" +
+    "📅 Tarih: " + (get('date') || 'Belirtilmedi') + "\n" +
+    "🕐 Saat: " + (get('time') || 'Belirtilmedi') + "\n" +
+    "📝 Not: " + (get('note') || 'Yok');
+  window.open("https://wa.me/905355697176?text=" + encodeURIComponent(message), "_blank");
+});
+</script>
+</body>
+</html>
